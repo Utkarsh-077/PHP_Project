@@ -1,0 +1,58 @@
+<html>  
+<head>  
+    <title>PHP login system</title>  
+      
+    <link rel = "stylesheet" type = "text/css" href = "style.css"> 
+    <div style="text-align: end;"><button onclick="document.location='signup.html'"> Signup</button></div>  
+</head>  
+<body > 
+    <div id = "frm">  
+        <h1 style="font-family:Courier New, monospace; text-align: start;">KAMIKAZE CLUB (M.U.I.T)
+
+        </h1> 
+        <h2> Login to get started</h2> 
+        <form name="f1" action = "authentication.php" onsubmit = "return validation()" method = "POST">  
+            <p>  
+                <label> UserName: </label>  
+                <input type = "text" id ="user" name  = "user" />  
+            </p>  
+            <p>  
+                <label>  Password: </label>  
+                <input type = "password" id ="pass" name  = "pass" />  
+            </p>  
+            <p style="text-decoration: wavy;">     
+                <input type =  "submit" id = "btn" value = "Login" />  
+            </p>  
+        </form>  
+    </div> 
+    <div style="font-size: 20px; color:#29fc21; font-family: cursive;">
+     
+     Made by : Sidhauli Infotech Solutions
+
+
+    </div> 
+    // validation for empty field   
+    <script>  
+            function validation()  
+            {  
+                var id=document.f1.user.value;  
+                var ps=document.f1.pass.value;  
+                if(id.length=="" && ps.length=="") {  
+                    alert("User Name and Password fields are empty");  
+                    return false;  
+                }  
+                else  
+                {  
+                    if(id.length=="") {  
+                        alert("User Name is empty");  
+                        return false;  
+                    }   
+                    if (ps.length=="") {  
+                    alert("Password field is empty");  
+                    return false;  
+                    }  
+                }                             
+            }  
+        </script>  
+</body>     
+</html>  

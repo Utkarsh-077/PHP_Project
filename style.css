@@ -1,0 +1,46 @@
+body{   
+    background-image: url('dark.png');
+          background-repeat: no-repeat;
+        background-attachment: fixed;
+          background-size: 100% 100%; 
+}  
+#frm{  
+    border: double rgb(7, 7, 7) 1px;  
+    width:50%;  
+    border-radius: 2px;  
+    margin: 120px auto;  
+    color: #a8e7f7;  
+    padding: 50px;
+    font-size: 20px;
+    font-family: Courier New, monospace;  
+}  
+#btn{
+    color: #fff;  
+    background-color:#499eff;  
+    border: 4px ;
+    padding: 6px;  
+    margin-left: 70%;
+    width: 3cm;
+    display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+
+  
+    
+} 
+button{color: #fff;  
+    background: purple;  
+    border: 4px ;
+    padding: 6px;  
+    margin-left: 70%;
+    width: 3cm;
+    display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+
+
+} 

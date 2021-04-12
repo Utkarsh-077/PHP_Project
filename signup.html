@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sign-up
+    </title>
+    <style>
+        body {
+          background-image: url('landscape.png');
+          background-repeat: no-repeat;
+        background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+        #btn{  
+    color: #fff;  
+    background: purple;  
+    border: 4px ;
+    padding: 6px;  
+    margin-left: 70%;
+    width: 4cm;
+    display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+      
+}  
+
+    </style>
+        
+    <h3 style="color: #dd32ff; font-family:cursive;">It seems you are not a member of our community.<br> Signup with below form to access our website</h3>
+</head>
+<body style="color: #dd32ff; font-family: cursive;">
+    <form name="f1" action = "entry.php" onsubmit = "return validation()"  method = "POST">  
+        <p>  
+            <label> UserName: </label>  
+            <input type = "text" id ="user" name  = "user" />  
+        </p>  
+        <p>  
+            <label>  Password&nbsp;   : </label>  
+            <input type = "password" id ="pass" name  = "pass" />  
+        </p>  
+        <p style="text-decoration: wavy;">     
+            <input type =  "submit" id = "btn" value = "submit" />  
+        </p>  
+    </form> 
+    <script>  
+        function validation()  
+        {  
+            var id=document.f1.user.value;  
+            var ps=document.f1.pass.value;  
+            if(id.length=="" && ps.length=="") {  
+                alert("User Name and Password fields are empty");  
+                return false;  
+            }  
+            else  
+            {  
+                if(id.length=="") {  
+                    alert("User Name is empty");  
+                    return false;  
+                }   
+                if (ps.length=="") {  
+                alert("Password field is empty");  
+                return false;  
+                }  
+            }                             
+        }  
+    </script>  
+</body>
+</html>
