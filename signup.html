@@ -61,8 +61,8 @@
                     alert("User Name is empty");  
                     return false;  
                 }   
-                if (ps.length=="") {  
-                alert("Password field is empty");  
+                if (ps.length<5) {  
+                alert("Password is weak");  
                 return false;  
                 }  
             }                             
