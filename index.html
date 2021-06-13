@@ -1,17 +1,21 @@
-<html>  
+<!DOCTYPE html>
+<html lang="en">  
 <head>  
-    <title>PHP login system</title>  
-      
+    <title>Wizard's Club login</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel = "stylesheet" type = "text/css" href = "style.css"> 
-    <div style="text-align: end;"><button onclick="document.location='signup.html'"> Signup</button></div>  
+    <div style="margin-left: 76%;"><button class="button" onclick="document.location='signup.html'"> Signup</button></div>  
 </head>  
 <body > 
-    <div id = "frm">  
-        <h1 style="font-family:Courier New, monospace; text-align: start;">KAMIKAZE CLUB (M.U.I.T)
+    <div id = "frm" class="form">
+        <img style="height: 100px; text-align: center;"  src="MUIT2.png">  
+        <h1 style="font-family:Courier New, monospace; text-align: center;">WIZARD'S CLUB<br>(M.U.I.T)
 
         </h1> 
         <h2> Login to get started</h2> 
-        <form name="f1" action = "authentication.php" onsubmit = "return validation()" method = "POST">  
+        <form name="f1" action = "authenticate.php" onsubmit = "return validation()" method = "POST">  
             <p>  
                 <label> UserName: </label>  
                 <input type = "text" id ="user" name  = "user" />  
@@ -21,17 +25,17 @@
                 <input type = "password" id ="pass" name  = "pass" />  
             </p>  
             <p style="text-decoration: wavy;">     
-                <input type =  "submit" id = "btn" value = "Login" />  
+                <input type =  "submit" id = "btn" value = "Login" class="button" />  
             </p>  
         </form>  
     </div> 
     <div style="font-size: 20px; color: wheat; font-family: cursive;">
      
-     Made by : Utkarsh-077
+     Made by : Utkarsh Gupta
 
 
     </div> 
-    // validation for empty field   
+       
     <script>  
             function validation()  
             {  

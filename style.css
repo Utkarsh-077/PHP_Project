@@ -1,46 +1,45 @@
 body{   
-    background-image: url('dark.png');
+    background-color: #006B54;
           background-repeat: no-repeat;
         background-attachment: fixed;
           background-size: 100% 100%; 
 }  
 #frm{  
-    border: double rgb(7, 7, 7) 1px;  
+    border: double rgb(5, 5, 5) 1px;  
+    background-color: rgb(207, 126, 4);
     width:50%;  
-    border-radius: 2px;  
+    border-radius: 20px;  
     margin: 120px auto;  
-    color: #a8e7f7;  
+    color: #000000;  
     padding: 50px;
     font-size: 20px;
     font-family: Courier New, monospace;  
 }  
-#btn{
-    color: #fff;  
-    background-color:#499eff;  
-    border: 4px ;
-    padding: 6px;  
-    margin-left: 70%;
-    width: 3cm;
-    display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 12px;
-
-  
+.button{
+  color: rgb(7, 7, 7);  
+  background: rgb(6, 172, 0);  
+  border: 1.5px solid black ;
+  padding: 6px;  
+  margin-left: 70%;
+  width: 3cm;
+  display: inline-block;
+font-size: 15px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 12px;
+font-family: 'Times New Roman', Times, serif;
+font-weight: bolder;
+box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     
 } 
-button{color: #fff;  
-    background: purple;  
-    border: 4px ;
-    padding: 6px;  
-    margin-left: 70%;
-    width: 3cm;
-    display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 12px;
+.button:hover{
+  background: #00ff15;
+
+}
+button:hover{
+  transform: scale(1.2);
+  border: 2px solid white;
+  transition-duration: 400ms;
 
 
-} 
+}
