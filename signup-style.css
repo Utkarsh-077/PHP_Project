@@ -1,0 +1,91 @@
+body{
+    background: linear-gradient(90deg, #0aff85 , #20e6cb);
+    height: 100%;
+    color: rgb(0, 0, 0); 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3{
+
+    color: rgb(0, 0, 0); 
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#btn{  
+color: #fff;  
+background: rgb(7, 7, 7);  
+border: 4px ;
+padding: 7px;  
+margin-left: 70%;
+width: 3cm;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 12px;
+
+} 
+input{
+box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+
+}
+div {
+height: 50px;
+width: 50px;
+margin: auto;
+display: flex;
+margin-top: 10%;
+margin-left: 50%;
+
+
+
+
+}
+
+
+#rect {
+animation-name: rainbow;
+animation-duration:3s;
+animation-iteration-count: infinite;
+
+}
+@keyframes rainbow{
+0% {
+border: 2px solid black;
+transform: scale(1) rotate(0deg);
+border-radius: 50px;
+
+
+}
+50% {
+border: 4px double black;
+transform: scale(1) rotate(180deg);
+border-radius: 0px;
+}
+100%{
+border: 2px dashed black;
+transform: scale(1) rotate(360deg);
+border-radius: 50px;
+}
+
+}
+label{
+font-size: 15px;
+font-weight: bolder;
+
+}
+p:hover{
+color: rgb(0, 0, 0);
+
+
+
+
+}
+.yo:hover{
+transform: scale(1.2);
+transition-duration: 400ms;
+}
+
+
+

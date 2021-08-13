@@ -16,7 +16,7 @@ include('connection.php');
           
         if($count >= 1){  
             #echo "<h1><center> Login successful </center></h1> ;
-            echo "<script> window.location.assign('kamikaze.html'); </script>";
+            echo "<script> window.location.assign('main.html'); </script>";
             
         }  
         else{  

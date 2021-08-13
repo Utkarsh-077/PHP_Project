@@ -1,0 +1,85 @@
+body{
+    background: linear-gradient(90deg, #919090 , #585858);
+    height: 100%;
+}
+button{
+    color: rgb(7, 7, 7);  
+    background: rgb(117, 117, 115);  
+    border: 1.5px solid black ;
+    padding: 6px;  
+    margin-left: 70%;
+    width: 3cm;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+
+
+} 
+div {
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    display: flex;
+    margin-top: 20%;
+    margin-left: 50%;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin-bottom: 40%;
+
+
+
+
+
+}
+
+
+#rect {
+    animation-name: rainbow;
+    animation-duration:6s;
+    animation-iteration-count:2;
+
+}
+@keyframes rainbow{
+0% {
+    border: 2px solid rgb(0, 0, 0);
+    transform: scale(0) rotate(0deg);
+    border-radius: 50px;
+
+
+
+}
+50% {
+    border: 4px double rgb(0, 0, 0);
+    transform: scale(1) rotate(180deg);
+    border-radius: 0px;
+
+}
+100%{
+    border: 4px double rgb(0, 0, 0);
+    transform: scale(3) rotate(360deg);
+    border-radius: 50px;
+}
+
+}
+button:hover{
+    transform: scale(1.2);
+    border: 2px solid white;
+    transition-duration: 400ms;
+
+
+}
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000;
+}
+p{
+    padding-left: 20%;
+    color: rgb(229, 238, 237);
+
+}

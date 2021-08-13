@@ -6,97 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Sign-up
     </title>
-    <style>
-        body{
-            background: linear-gradient(90deg, #0aff85 , #20e6cb);
-            height: 100%;
-        }
+    <link rel = "stylesheet" type = "text/css" href = "signup-style.css">
+    
         
-        #btn{  
-    color: #fff;  
-    background: rgb(7, 7, 7);  
-    border: 4px ;
-    padding: 7px;  
-    margin-left: 70%;
-    width: 3cm;
-    display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 12px;
-      
-} 
-input{
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     
-    
-}
-div {
-    height: 50px;
-    width: 50px;
-    margin: auto;
-    display: flex;
-    margin-top: 10%;
-    margin-left: 50%;
-    
-
-    
-    
-  }
-  
-
-  #rect {
-    animation-name: rainbow;
-    animation-duration:3s;
-    animation-iteration-count: infinite;
-
-  }
-  @keyframes rainbow{
-    0% {
-    border: 2px solid black;
-    transform: scale(1) rotate(0deg);
-    border-radius: 50px;
-    
-    
-  }
-  50% {
-    border: 4px double black;
-    transform: scale(1) rotate(180deg);
-    border-radius: 0px;
-  }
-  100%{
-    border: 2px dashed black;
-    transform: scale(1) rotate(360deg);
-    border-radius: 50px;
-  }
-
-  }
-  label{
-      font-size: 15px;
-      font-weight: bolder;
-    
-  }
- p:hover{
-     color: rgb(0, 0, 0);
-
-     
-     
-
-  }
-  .yo:hover{
-    transform: scale(1.2);
-    transition-duration: 400ms;
-  }
-  
-
-
-
-
-    </style>
-        
-    <h3 style="color: rgb(0, 0, 0); font-family:Arial, Helvetica, sans-serif;"><br> Signup with below form to access our website</h3>
 </head>
-<body style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif;">
+<body>
+    <h3><br> Signup with below form to access our website</h3>
     <form name="f1" action = "entry.php" onsubmit = "return validation()"  method = "POST">  
         <p>  
             <label> UserName:</label>  
@@ -107,15 +23,15 @@ div {
             <input type = "password" id ="pass" name  = "pass" placeholder="Password" />  
         </p> 
         <p>  
-            <label> EmailID:&nbsp;&nbsp;&nbsp;&nbsp; </label>  
-            <input type = "text" id ="gmail" name  = "gmail" placeholder="email id" />  
+            <label> Email-Id :&nbsp;&nbsp;&nbsp; </label>  
+            <input type = "email" id ="gmail" name  = "gmail" placeholder="email id" />  
         </p>
         <p>  
             <label>BirthDate &nbsp;: </label>  
             <input type = "date" id ="dob" name  = "dob" />  
         </p>
         <p>  
-            <label> University&nbsp;: </label>  
+            <label>University&nbsp;: </label>  
             <input type = "text" id ="uni" name  = "uni" placeholder="University Name"/>  
         </p> 
           
